@@ -1,32 +1,20 @@
-<p align="center"><a href="https://t.me/SuraVCStreamBot"><img src="https://github.com/SRTheProgrammer/SuraVCStream/raw/main/driver/suravclogo.jpg"></a></p>
+<p align="center"><a href="https://t.me/U6i_xxBOT"><img src="https://telegra.ph/file/bd735afcc7f3873f7b8e6.jpg"></a></p>
 <p align="center">
-    <br><b>Sura VC Stream is an Advanced Telegram Bot that's allow you to play Video & Music on Telegram Group Video Chat</b><br>
+    <br><b>SOURCE LOTAS IS BEST SOURCE MUSIC ON TELEGRAM </b><br>
 </p>
 
 ## Preview
 <p align="center">
-  <img src="https://telegra.ph/file/21a41d5e4636289c2d768.png">
+  <img src="https://telegra.ph/file/dc19c4ab5e89393c17caf.jpg">
 </p>
 
-## ✨ Features
-- Music & Video stream support
-- MultiChat support
-- Playlist & Queue support
-- Skip, Pause, Resume, Stop feature
-- Music & Video downloader feature
-- Inline Search support
-- YouTube direct search support
-- YouTube/Local/Live/m3u8 stream support
-- Inline Search support
-- Control With Button support
-- Volume Control
-- Userbot Auto Join
-- Broadcast & Global Ban
-- Shell Executor (eval & sh)
-- SpeedTest Runner
-- Direct Updater
+## ✨ SOURCE LOTAS💞
+- MUSIC AND VIDEOS IN VIDEO CALLS
+- MAKE BRODCAST WITH PIN
+- FASTEST ON TELEGRAM 
+- SUDO AND OWNER FOR BOT
 
-## 🛠 Commands:
+## 🛠 SOURCE LOTAS COMMANDS:
 | Command | Description |
 | ------ | ------ |
 | `/play (query)` | play music from youtube |
@@ -56,44 +44,11 @@
 | `/help` | to show help message |
 
 
+# CREDITS AND LINCEAS💖
 
-## Generate Pyrogram session string from below
+- [ETCH](https://t.me/UIHHU) ``Dev``
+- [K2ABA](https://t.me/K2aBa) ``Dev``
+- [SMSM](https://t.me/PV_SMSM) ``Dev``
 
-[![GenerateString](https://img.shields.io/badge/repl.it-generateString-yellowgreen)](https://replit.com/@SRTheProgrammer/Session-Generator#main.py)
-
-## Heroku Deployment
-The easy way to host this bot, deploy to Heroku, Change the app country to Europe (it will help to make the bot stable).
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
-
-## VPS Deployment 
-(Tutorial On Deploying to VPS is Coming Soon, You Don't Need to Worry)
-Get the best Quality of streaming performance by hosting it on VPS, Steps:
-
-```sh
-sudo apt update && apt upgrade -y
-sudo apt install git curl python3-pip ffmpeg -y
-pip3 install -U pip
-curl -sL https://deb.nodesource.com/setup_16.x | bash -
-sudo apt-get install -y nodejs
-npm i -g npm
-git clone https://github.com/SRTheProgrammer/SuraVCStream # clone the repo.
-cd SuraVCStream
-pip3 install -U -r requirements.txt
-cp example.env .env # use vim to edit ENVs
-vim .env # fill up the ENVs (Steps: press i to enter in insert mode then edit the file. Press Esc to exit the editing mode then type :wq! and press Enter key to save the file).
-python3 main.py # run the bot.
-
-# continue the host with screen or anything else, thanks for reading.
-```
-
-# Credits 💖
-- [Me](https://github.com/SRTheProgrammer) ``Just Modify``
-- [Levina](https://github.com/levina-lab) ``Dev``
-- [Zxce3](https://github.com/Zxce3) ``Dev``
-- [tofikdn](https://github.com/tofikdn) ``Dev``
-- [Laky's](https://github.com/Laky-64) for [``py-tgcalls``](https://github.com/pytgcalls/pytgcalls)
-- [Dan](https://github.com/delivrance) for [``Pyrogram``](https://github.com/pyrogram)
-
-### Support & Updates 🎑
-<a href="https://t.me/SuraBotSupport"><img src="https://img.shields.io/badge/Join-Group%20Support-blue.svg?style=for-the-badge&logo=Telegram"></a> <a href="https://t.me/SuraBotStats"><img src="https://img.shields.io/badge/Join-Updates%20Channel-blue.svg?style=for-the-badge&logo=Telegram"></a>
+### FOR SUPPORTS & UPDATES 🎑
+<a href="https://t.me/kkkkggikogrubd"><img src="https://img.shields.io/badge/Join-Group%20Support-blue.svg?style=for-the-badge&logo=Telegram"></a> <a href="https://t.me/SourceLotus1"><img src="https://img.shields.io/badge/Join-Updates%20Channel-blue.svg?style=for-the-badge&logo=Telegram"></a>
