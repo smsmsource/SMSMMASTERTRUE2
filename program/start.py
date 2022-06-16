@@ -72,7 +72,7 @@ async def start_(c: Client, message: Message):
 🤖 [{me_bot.first_name}](https://t.me/{BOT_USERNAME}) **يسمح لك بتشغيل اغاني🎶 و أفلام 🎥 في المحادثه الصوتيه بالجروب!**\n
 📕 **لمعرفه جميع اوامر البوت الكامله الرجاء الضغط علي » 🛠️ الاوامر!**\n
 🔖 **لمعرفة كيفية استعمال البوت الرجاء الضغط علي » 📕 دليل الاستعمال!**\n
-👽 **للتواصل مع صاحب السورس الرجاء الضغط علي» 👉 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐌𝐒𝐌🌐 **\n """,
+👽 **للتواصل مع صاحب السورس الرجاء الضغط علي» 👉 𝙎𝙊𝙐𝙍𝘾𝙀 𝙇𝙊𝙏𝘼𝙎 🌐 **\n """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -96,16 +96,16 @@ async def start_(c: Client, message: Message):
                 ],
                 [
                     InlineKeyboardButton(
-                        "𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐌𝐒𝐌🌐", url="https://t.me/C_SMSM"
+                        "𝙎𝙊𝙐𝙍𝘾𝙀 𝙇𝙊𝙏𝘼𝙎 🌐", url="https://t.me/SourceLotus1"
                     )
                 ],
                 [    InlineKeyboardButton(
-                    "🌐للتواصل مع صاحب السورس🌐", url="https://t.me/PV_SMSM"
+                    "🌐للتواصل مع صاحب السورس🌐", url="https://t.me/UIHHU"
                      )
                 ],
                 [
                     InlineKeyboardButton(
-                    "🌐شات للدعم والاستفسارات🌐", url="https://t.me/G_SMSM"
+                    "🌐شات للدعم والاستفسارات🌐", url="https://t.me/kkkkggikogrubd"
                     )
                 ]
             ]
@@ -178,7 +178,7 @@ async def alive(c: Client, message: Message):
         ]
     )
 
-    alive = f"**Hello {message.from_user.mention()}, I'm {me_bot.first_name}**\n\n🧑🏼‍💻 My Master: [{ALIVE_NAME}](https://t.me/{OWNER_USERNAME})\n👾 Bot Version: `v{__version__}`\n🔥 Pyrogram Version: `{pyrover}`\n🐍 Python Version: `{__python_version__}`\n✨ PyTgCalls Version: `{pytover.__version__}`\n🆙 Uptime Status: `{uptime}`\n\n❤ **Thanks for Adding me here, for playing video & music on your Group's video chat**"
+    alive = f"**؛اهلا وسهلا {message.from_user.mention()}, I'm {me_bot.first_name}**\n\n🧑🏼‍💻 صاحب العظمه: [{ALIVE_NAME}](https://t.me/{OWNER_USERNAME})\n👾 نسخه البوت: `v{__version__}`\n🔥 اصدار البايوجرام: `{pyrover}`\n🐍 اصدار البايثون: `{__python_version__}`\n✨ PyTgCalls Version: `{pytover.__version__}`\n🆙 Uptime Status: `{uptime}`\n\n❤ **شكرا لإدخالك البوت، لتشغيل الاغاني والفيديوهات فالمحادثه الصوتيه**"
 
     await c.send_photo(
         chat_id,
@@ -202,9 +202,9 @@ async def get_uptime(c: Client, message: Message):
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
     await message.reply_text(
-        "🤖 bot status:\n"
-        f"• **uptime:** `{uptime}`\n"
-        f"• **start time:** `{START_TIME_ISO}`"
+        "🤖 مدة استعمالي:\n"
+        f"• **الوقت:** `{uptime}`\n"
+        f"• **بدايه العمل:** `{START_TIME_ISO}`"
     )
 
 
@@ -231,13 +231,13 @@ async def new_chat(c: Client, m: Message):
             if member.id == me_bot.id:
                 if chat_id in await blacklisted_chats():
                     await m.reply_text(
-                        "❗️ This chat has blacklisted by sudo user and You're not allowed to use me in this chat."
+                        "❗️هذه المحادثه تم حظرها من قبل المطور وانت غير مسموح لك بالوجود في هذة المجموعه😁."
                     )
                     return await bot.leave_chat(chat_id)
             if member.id == me_bot.id:
                 return await m.reply(
-                    "❤️ Thanks for adding me to the **Group** !\n\n"
-                    "Appoint me as administrator in the **Group**, otherwise I will not be able to work properly, and don't forget to type `/userbotjoin` for invite the assistant.\n\n"
+                    "❤️ شكرا لادخالي في هذة للمجموعه**Group** !\n\n"
+                    "ارفعني مطور فية هذه المجموعه**Group**, لكي استطيع ان اعمل بنجاح, لا تنسى ام تكتب`/userbotjoin` .\n\n"
                     "Once done, then type `/reload`",
                     reply_markup=InlineKeyboardMarkup(
                         [
@@ -247,37 +247,6 @@ async def new_chat(c: Client, m: Message):
                             ],[
                                 InlineKeyboardButton("- 𝐀𝐒𝐒𝐈𝐒𝐓𝐀𝐍𝐓 -", url=f"https://t.me/{me_user.username}")
                             ]
-                        ]
-                    )
-                )
-            return
-        except BaseException:
-            return
-
-@Client.on_message(command("/start") & filters.private & ~filters.edited)
-async def startt_(client: Client, message: Message):
-    await message.reply_photo(
-        photo=f"{ALIVE_IMG}",
-        caption=f""" اهلا بك انا بوت اسمي {me_bot.first_name} 📌 !**\n
-➥ ** لو عاوز تشوف الاوامر وطريقه التشغيل اضغط علي اول زر↯ **\n
-➥ ** تخصصي تشغيل الموسيقي والافلام في المحدثات الصواتيه الخاصه بي التليحرام↯ **\n
-➥ ** الزر التاني للتواصل مع المبرمج سمسم **\n
-➥ ** اضغط علي اسم المطور للدخول الي شاتو تلقائي↯**\n """,
-        reply_markup=InlineKeyboardMarkup(
-                    [
-                        [
-                            InlineKeyboardButton("قم بي الضغط للاستمرار -", callback_data="rbic")
-                        ],
-                        [   
-                            InlineKeyboardButton("تواصل المطور من هنا -", callback_data="nglish")
-                        ],
-                        [
-                            InlineKeyboardButton("[⌯ 𝗗͛𝗲͛𝘃͛ 𝗦͛𝗺͛𝗦͛𝗺͛ 𝗘͛𝗹͛𝗞͛𝗯͛𝗘͛𝗿͛ - ⌯]𝟏𝟎𝐊🍷𖣩ًََِْٰٓ ⃝⃙🇽🇰 ⌯", url=f"https://t.me/PV_SMSM")
-                        ]
-                    ]
-                )
-            )
-
 chat_watcher_group = 5
 
 @Client.on_message(group=chat_watcher_group)
