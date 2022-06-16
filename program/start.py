@@ -246,7 +246,15 @@ async def new_chat(c: Client, m: Message):
                                 InlineKeyboardButton("- 𝐒𝐔𝐏𝐏𝐎𝐑𝐓 -", url=f"https://t.me/{GROUP_SUPPORT}")
                             ],[
                                 InlineKeyboardButton("- 𝐀𝐒𝐒𝐈𝐒𝐓𝐀𝐍𝐓 -", url=f"https://t.me/{me_user.username}")
-                            ]
+                                ]
+                        ]
+                    )
+                )
+            return
+        except Exception:
+            return
+
+
 chat_watcher_group = 5
 
 @Client.on_message(group=chat_watcher_group)
