@@ -20,45 +20,56 @@ from config import (
 
 
 
-@Client.on_callback_query(filters.regex("rbic"))
-async def rbic(_, query: CallbackQuery):
+@Client.on_callback_query(filters.regex("home_start"))
+@check_blacklist()
+async def start_set(_, query: CallbackQuery):
     await query.answer("home start")
     await query.edit_message_text(
-        f"""مرحباً بك \n
-⌁ ⁞  بوت تشغيل الأغاني والفيديو  في المكالمه ' المرئية
- البوت قيد التشغيل الان ⌯
-⌁ ⁞ my developer [[⌯ 𝗗͛𝗲͛𝘃͛ 𝗦͛𝗺͛𝗦͛𝗺͛ 𝗘͛𝗹͛𝗞͛𝗯͛𝗘͛𝗿͛ - ⌯]𝟏𝟎𝐊🍷𖣩ًََِْٰٓ ⃝⃙🇽🇰 ⌯](https://t.me/PV_SMSM)
-⌁ ⁞  قم بإضافة البوت اللي مجموعتك واستمع إلى الموسيقى ومشاهدة الفيديوهات ⌯""",
+        f"""👋 **Welcome {query.message.from_user.mention()} !**\n
+🤖 [{me_bot.first_name}](https://t.me/{me_bot.username}) **Allows you to play music🎶 and video🎥 on groups through the Telegram Group video chat!**\n
+📕 **Find out all the Bot's commands and how they work by clicking on the » 🛠️ Check Commands button!**\n
+🔖 **To know how to use this bot, please click on the » 📕 Read Basic Guide button!**\n
+👽 **To Deploy Your Own Source Click On The » 👉 My Source Code Button **\n """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "- اضف البوت اللي مجموعتك -",
+                        "➕ Add me to your Group ➕",
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                     )
                 ],
-                [InlineKeyboardButton("- طريقة التفعيل -", callback_data="quick_use")],
+                [InlineKeyboardButton("📕 Basic Guide", callback_data="user_guide")],
                 [
-                    InlineKeyboardButton("- طريقة التشغيل -", callback_data="command_list"),
-                    InlineKeyboardButton("- المطور -", url=f"https://t.me/PV_SMSM"),
+                    InlineKeyboardButton("🛠️ Commands", callback_data="command_list"),
+                    InlineKeyboardButton("💲 Donate", url=f"https://t.me/{OWNER_USERNAME}"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "- الجروب -", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "👨🏾‍🤝‍👨🏼 Official Group", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "- القناة -", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "🔗 Official Channel", url=f"https://t.me/{UPDATES_CHANNEL}"
                     ),
                 ],
                 [
                     InlineKeyboardButton(
-                        "[⌯ 𝗗͛𝗲͛𝘃͛ 𝗦͛𝗺͛𝗦͛𝗺͛ 𝗘͛𝗹͛𝗞͛𝗯͛𝗘͛𝗿͛ - ⌯]𝟏𝟎𝐊🍷𖣩ًََِْٰٓ ⃝⃙🇽🇰 ⌯", url="https://t.me/PV_SMSM"
+                        "👉 My Source Code", url="https://github.com/SRTheProgrammer/SuraVCStream"
                     )
                 ],
+                [    InlineKeyboardButton(
+                    "❗️⚠️Youtube Channel⚠️❗️", url="https://www.youtube.com/channel/UCCmjxoJe_6T1ota84YH3ikg?sub_confirmation=1"
+                     )
+                ],
+                [
+                    InlineKeyboardButton(
+                    "Mining ₿itcoin", url="http://t.me/ProBTCMinerbot?start=ref1261923198"
+                    )
+                ]
             ]
         ),
         disable_web_page_preview=True,
     )
+        
 
 @Client.on_callback_query(filters.regex("nglish"))
 async def nglish(_, query: CallbackQuery):
