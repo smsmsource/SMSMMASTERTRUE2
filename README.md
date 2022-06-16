@@ -1,6 +1,6 @@
 <p align="center"><a href="https://t.me/U6i_xxBOT"><img src="https://telegra.ph/file/bd735afcc7f3873f7b8e6.jpg"></a></p>
 <p align="center">
-    <br><b>SOURCE LOTAS IS BEST SOURCE MUSIC ON TELEGRAM </b><br>
+    <br><b>• ⃝➼𝐒𝐎𝐔𝐑𝐂𝐄 𝑳𝐎𝐓𝐀𝐒 𝐈𝐒 𝐁𝐄𝐒𝐓 𝐒𝐎𝐔𝐑𝐂𝐄 𝐌𝐔𝐒𝐈𝐂 𝐎𝐍 𝐓𝐄𝑳𝐄𝐆𝐑𝐀𝐌 ꗛ </b><br>
 </p>
 
 ## Preview
