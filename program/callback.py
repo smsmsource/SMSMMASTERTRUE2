@@ -19,93 +19,54 @@ from config import (
 )
 
 
-
 @Client.on_callback_query(filters.regex("home_start"))
 @check_blacklist()
 async def start_set(_, query: CallbackQuery):
     await query.answer("home start")
     await query.edit_message_text(
-        f"""👋 **Welcome {query.message.from_user.mention()} !**\n
-🤖 [{me_bot.first_name}](https://t.me/{me_bot.username}) **Allows you to play music🎶 and video🎥 on groups through the Telegram Group video chat!**\n
-📕 **Find out all the Bot's commands and how they work by clicking on the » 🛠️ Check Commands button!**\n
-🔖 **To know how to use this bot, please click on the » 📕 Read Basic Guide button!**\n
-👽 **To Deploy Your Own Source Click On The » 👉 My Source Code Button **\n """,
+        f"""ttps://t.me/{BOT_USERNAME}) **يسمح لك بتشغيل اغاني🎶 و أفلام 🎥 في المحادثه الصوتيه بالجروب!**\n
+📕 **لمعرفه جميع اوامر البوت الكامله الرجاء الضغط علي » 🛠️ الاوامر!**\n
+🔖 **لمعرفة كيفية استعمال البوت الرجاء الضغط علي » 📕 دليل الاستعمال!**\n
+👽 **للتواصل مع صاحب السورس الرجاء الضغط علي» 👉 𝙎𝙊𝙐𝙍𝘾𝙀 𝙇𝙊𝙏𝘼𝙎 🌐 **\n """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "➕ Add me to your Group ➕",
+                        "➕ اضفني الي مجموعتك ➕",
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                     )
                 ],
-                [InlineKeyboardButton("📕 Basic Guide", callback_data="user_guide")],
+                [InlineKeyboardButton("📕 دليل الاستعمال", callback_data="user_guide")],
                 [
-                    InlineKeyboardButton("🛠️ Commands", callback_data="command_list"),
-                    InlineKeyboardButton("💲 Donate", url=f"https://t.me/{OWNER_USERNAME}"),
+                    InlineKeyboardButton("🛠️ الاوامر", callback_data="command_list"),
+                    InlineKeyboardButton("🌐 صاحب البوت", url=f"https://t.me/{OWNER_USERNAME}"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "👨🏾‍🤝‍👨🏼 Official Group", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "👨🏾‍🤝‍👨🏼 جروب الدعم", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "🔗 Official Channel", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "🔗 قناه الدعم", url=f"https://t.me/{UPDATES_CHANNEL}"
                     ),
                 ],
                 [
                     InlineKeyboardButton(
-                        "👉 My Source Code", url="https://github.com/SRTheProgrammer/SuraVCStream"
+                        "𝙎𝙊𝙐𝙍𝘾𝙀 𝙇𝙊𝙏𝘼𝙎 🌐", url="https://t.me/SourceLotus1"
                     )
                 ],
                 [    InlineKeyboardButton(
-                    "❗️⚠️Youtube Channel⚠️❗️", url="https://www.youtube.com/channel/UCCmjxoJe_6T1ota84YH3ikg?sub_confirmation=1"
+                    "🌐للتواصل مع صاحب السورس🌐", url="https://t.me/UIHHU"
                      )
                 ],
                 [
                     InlineKeyboardButton(
-                    "Mining ₿itcoin", url="http://t.me/ProBTCMinerbot?start=ref1261923198"
+                    "🌐شات للدعم والاستفسارات🌐", url="https://t.me/kkkkggikogrubd"
                     )
                 ]
             ]
         ),
         disable_web_page_preview=True,
     )
-        
-
-@Client.on_callback_query(filters.regex("nglish"))
-async def nglish(_, query: CallbackQuery):
-    await query.answer("home start")
-    await query.edit_message_text(
-        f"هنا لنكات تواصل  \n لو احتجت اي حاجه كلم المطور \n عن طريق الضغط علي تواصل واتساب \nاو الضغط علي اسم المطور ده➼ [[⌯ 𝗗͛𝗲͛𝘃͛ 𝗦͛𝗺͛𝗦͛𝗺͛ 𝗘͛𝗹͛𝗞͛𝗯͛𝗘͛𝗿͛ - ⌯]𝟏𝟎𝐊🍷𖣩ًََِْٰٓ ⃝⃙🇽🇰 ⌯](https://t.me/PV_SMSM)",
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        "- اضف البوت الي مجموعتك -",
-                        url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
-                    )
-                ],
-                [InlineKeyboardButton("- للتواصل واتساب -", url=f"http://wa.me/+201025515706")],
-                [
-                    InlineKeyboardButton("- جروب دردشه -", url=f"https://t.me/CO0O00"),
-                    InlineKeyboardButton("- المطور -", url=f"https://t.me/PV_SMSM"),
-                ],
-                [
-                    InlineKeyboardButton(
-                        "- جروب الدعم -", url=f"https://t.me/{GROUP_SUPPORT}"
-                    ),
-                    InlineKeyboardButton(
-                        "- قناه البوت -", url=f"https://t.me/{UPDATES_CHANNEL}"
-                    ),
-                ],
-                [
-                    InlineKeyboardButton(
-                        "[⌯ 𝗗͛𝗲͛𝘃͛ 𝗦͛𝗺͛𝗦͛𝗺͛ 𝗘͛𝗹͛𝗞͛𝗯͛𝗘͛𝗿͛ - ⌯]𝟏𝟎𝐊🍷𖣩ًََِْٰٓ ⃝⃙🇽🇰 ⌯", url="https://t.me/PV_SMSM"
-                    )
-                ],
-            ]
-        ),
-        disable_web_page_preview=True,
-    )    
     
 @Client.on_callback_query(filters.regex("help_command"))
 @check_blacklist()
